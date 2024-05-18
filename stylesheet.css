@@ -11,6 +11,7 @@
 body {
     color: #2b2a27;
     font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+    line-height: normal;
 }
 
 img {
@@ -32,17 +33,18 @@ header {
     padding: 121px 4% 120px 4%;
 }
 
+/*文字の行の隙間で長さ変わってるかも！*/
 .header-txt {
-
     text-align: center;
     justify-content: space-between;
     display: flex;
+    align-items: center;
 }
 
 .header-txt img {
     vertical-align: left;
     width: 120px;
-    height: 27px;
+    height: 36px;
     /* text-align: left; */
 }
 
@@ -74,25 +76,24 @@ header li {
 
 .title {
     text-align: center;
-    font-weight: 700;
-    margin-bottom: 100px;
-    font-size: 25px;
+    font-size: 24px;
 }
+
+
 
 .about,
 .works,
 .news,
 .contact {
-    padding-top: 100px;
-    font-size: 15px;
+    font-size: 14.4px;
+}
+
+.about h2 {
+    margin: 80px 0 65px 0;
 }
 
 .shop-name {
-    padding-bottom: 20px;
-}
-
-.shop-detail li {
-    padding-bottom: 5px;
+    padding-bottom: 30px;
 }
 
 .about-txt {
@@ -101,6 +102,108 @@ header li {
     /* display: block; */
 }
 
+.works h2 {
+    margin: 130px 0 68px 0;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 23px;
+}
+
+.news h2 {
+    margin: 127px 0 65px 0;
+
+}
+
+.news-list {
+    border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.news-list dd {
+    padding-bottom: 15px;
+    border-top: 1px solid #c8c8c8;
+    padding-top: 15px;
+    width: 70%;
+}
+
+.news-list dt {
+    border-top: 1px solid #c8c8c8;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 30%;
+}
+
+.news-left {
+    padding: 0 78px 0 15.2px;
+}
+
+
+.contact h2 {
+    margin: 130px 0 65px 0;
+}
+
+.contact {
+    margin-bottom: 130px;
+}
+
+.contact form {
+    overflow: auto;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-item label {
+    text-align: left;
+    width: 15%;
+}
+
+.write {
+    height: 44px;
+    width: 85%;
+}
+
+.contact-textarea {
+    width: 85%;
+    height: 166px;
+    resize: none;
+}
+
+.submit {
+    height: 52px;
+    width: 200px;
+    margin-top: 30px;
+    background-color: #24292e;
+    color: white;
+}
+
+footer {
+    background-color: #24292e;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    height: 32px;
+}
+
+footer p {
+    line-height: 32px;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -120,8 +223,31 @@ header li {
     .header-txt {
         margin-bottom: 10px;
     }
-}
 
-git add
-git commit
-git push
+    .contact-item {
+        /* justify-content: center; */
+        /* height: auto; */
+        display: block;
+        text-align: left;
+    }
+
+    .contact-form label {
+        /* display: block; */
+        width: 100%;
+
+    }
+
+    .write, .contact-textarea {
+        /* display:; */
+        width: 100%;
+    }
+
+
+
+    .contact {
+        /* text-align: left; */
+        margin-bottom: 70px;
+    }
+
+
+}
