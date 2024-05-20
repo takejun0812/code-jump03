@@ -14,22 +14,32 @@
 <body>
     <header>
         <div class="header-txt">
+            <!-- <a href="index.html"><img src="img/logo.svg" alt="My Work"></a> -->
+            <!-- ロゴはお客さんが押してホーム画面に戻ろうとすることが多いのでaタグをつけることを忘れない -->
             <img src="img/logo.svg" alt="">
             <ul class="header-list">
                 <li class="header-btn"><a style="text-decoration:none;" href="">About</a></li>
                 <li class="header-btn"><a style="text-decoration:none;" href="">works</a></li>
                 <li class="header-btn"><a style="text-decoration:none;" href="">News</a></li>
                 <li class="header-btn"><a style="text-decoration:none;" href="">Contact</a></li>
-                <li class="header-insta"><a style="text-decoration:none;"
+                <li class="header-insta">
+                    <!-- <a href="https://www.instagram.com/" target="_blank"></a> -->
+                    <!-- targetを使うことでリンクに飛ぶ際の動作をきmえる -->
+                    <a style="text-decoration:none;"
                         href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13534424858&extra_1=s%7Cc%7C528180841805%7Ce%7C%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%7C&placement=&creative=528180841805&keyword=%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF&partner_id=googlesem&extra_2=campaignid%3D13534424858%26adgroupid%3D123868100139%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-332666818284%26loc_physical_ms%3D9053370%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaE2z0BaQ75jxW9Nt2Pd-XdxVuYsWeGsmW-wS0y7iZ0Q4hwjzNdzFGhoCiJ0QAvD_BwE"><img
-                            src="img/icon-instagram.png" alt=""></a></li>
+                            src="img/icon-instagram.png" alt="インスタグラム"></a></li>
             </ul>
         </div>
     </header>
-
+<!-- mainタグはdivいらない -->
     <div class="main">
         <div class="main-img">
-            <img src="img/mainvisual-pc.jpg" alt="">
+            <!-- <picture>
+                <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+                <img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+              </picture>
+            サイズによって画像が異なる場合はpictureタグを使う -->
+            <img src="img/mainvisual-pc.jpg" alt="テキストテキスト">
         </div>
         <div class="container">
             <section class="about">
@@ -48,12 +58,13 @@
             <section class="works">
                 <h2 class="title">Works</h2>
                 <div class="photos">
+                    <!-- リストにした方がCSSdeしなくてもブロック化できてよかったかも -->
                     <img src="img/works1.jpg" alt="">
                     <img src="img/works2.jpg" alt="">
                     <img src="img/works3.jpg" alt="">
                     <img src="img/works4.jpg" alt="">
                     <img src="img/works5.jpg" alt="">
-                    <img src="stylesheet.css" alt="">
+                    <img src="img/works6.jpg" alt="">
                 </div>
             </section>
             <section class="news">
@@ -92,7 +103,7 @@
             </section>
         </div>
     </div>
-
+<!-- footer,headerはidをつけるようにする。理由はCSSの設計における優先度をあげるためと、バックエンドでJSを利用する際に活用できるためである -->
     <footer>
         <p>&copy; 2020 My Work</p>
     </footer>

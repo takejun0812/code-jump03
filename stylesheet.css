@@ -6,7 +6,7 @@
 
 /* html {
     font-size: 100%;
-} */
+}指定することでユーザーの指定するフォントサイズが反映されない場合がある */
 
 body {
     color: #2b2a27;
@@ -96,8 +96,12 @@ header li {
     padding-bottom: 30px;
 }
 
+.shop-detail li {
+    padding-top: 5px;
+}
+
 .about-txt {
-    padding-top: 40px;
+    padding-top: 35px;
     overflow-wrap: normal;
     /* display: block; */
 }
@@ -115,7 +119,7 @@ header li {
 .photos img {
     display: inline-block;
     width: 30%;
-    padding-bottom: 23px;
+    padding-bottom: 35px;
 }
 
 .news h2 {
