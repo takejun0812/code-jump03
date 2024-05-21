@@ -132,24 +132,24 @@ header ul {
 }
 
 .news-list {
-    border-bottom: 1px solid #c8c8c8;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    /* display: inline-block; */
+    flex-direction: column;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.news-item {
+    display: flex;
+    border-top: 1px solid #c8c8c8;
+    padding: 15px 0;
+    
 }
 
 .news-list dd {
-    padding-bottom: 15px;
-    border-top: 1px solid #c8c8c8;
-    padding-top: 15px;
     width: 70%;
 }
 
 .news-list dt {
-    border-top: 1px solid #c8c8c8;
-    padding-top: 15px;
-    padding-left: 15px;
+    margin-left: 15px;
     width: 30%;
 }
 
@@ -243,6 +243,10 @@ footer p {
 
     .photos img{
         width: 100%;
+    }
+
+    .news-item {
+        flex-direction: column;
     }
 
     .contact-item {
