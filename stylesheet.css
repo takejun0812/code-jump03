@@ -187,10 +187,15 @@ header ul {
     width: 85%;
 }
 
+.contact-item input {
+    border: 1px solid #c8c8c8;
+}
+
 .contact-textarea {
     width: 85%;
     height: 166px;
     resize: none;
+    border: 1px solid #c8c8c8;
 }
 
 .submit {
@@ -245,6 +250,9 @@ footer p {
         width: 100%;
     }
 
+    .news-list dt {
+        margin-left: 0px;
+    }
     .news-item {
         flex-direction: column;
     }
@@ -259,7 +267,6 @@ footer p {
     .contact-form label {
         /* display: block; */
         width: 100%;
-
     }
 
     .write, .contact-textarea {
