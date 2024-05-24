@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/* html {
+    font-size: 100%;
+}指定しないとユーザーの指定するフォントサイズが反映されない場合がある */
+
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+    line-height: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 960px;
+    /* max-width: 100%; */
+    padding: 121px 4% 120px 4%;
+}
+
+/*文字の行の隙間で長さ変わってるかも！*/
+.header-txt {
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.header-txt img {
+    vertical-align: left;
+    width: 120px;
+    height: 36px;
+    /* text-align: left; */
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.header-btn {
+    /* padding-right: 30px; */
+
+}
+
+.header-list img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.main-img {
+    object-fit: cover;
+    height: 420px;
+}
+
+.container {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+.about,
+.works,
+.news,
+.contact {
+    font-size: 14.4px;
+}
+
+.about h2 {
+    margin: 80px 0 65px 0;
+}
+
+.shop-name {
+    padding-bottom: 30px;
+}
+
+.shop-detail li {
+    padding-top: 5px;
+}
+
+.about-txt {
+    padding-top: 35px;
+    overflow-wrap: normal;
+    /* display: block; */
+}
+
+.works h2 {
+    margin: 130px 0 68px 0;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 35px;
+}
+
+.news h2 {
+    margin: 127px 0 65px 0;
+
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.news-item {
+    display: flex;
+    border-top: 1px solid #c8c8c8;
+    padding: 15px;
+    
+}
+
+.news-list dd {
+    width: 70%;
+}
+
+.news-list dt {
+    margin-left: 15px;
+    width: 30%;
+}
+
+.news-left {
+    padding: 0 78px 0 15.2px;
+}
+
+
+.contact h2 {
+    margin: 130px 0 65px 0;
+}
+
+.contact {
+    margin-bottom: 130px;
+}
+
+.contact form {
+    overflow: auto;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact-item label {
+    text-align: left;
+    width: 15%;
+}
+
+.write {
+    height: 44px;
+    width: 85%;
+}
+
+.contact-item input {
+    border: 1px solid #c8c8c8;
+}
+
+.contact-textarea {
+    width: 85%;
+    height: 166px;
+    resize: none;
+    border: 1px solid #c8c8c8;
+}
+
+.submit {
+    height: 52px;
+    width: 200px;
+    margin-top: 30px;
+    background-color: #24292e;
+    color: white;
+}
+
+footer {
+    background-color: #24292e;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    height: 32px;
+}
+
+footer p {
+    line-height: 32px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 10px 4%;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+
+
+    .header-txt {
+        justify-content: center;
+        display: block;
+        font-size: 12.8px;
+    }
+
+    .header-txt {
+        margin-bottom: 10px;
+    }
+
+    .main-img {
+        object-fit: cover;
+        height: 420px;
+        width: 100%;
+    }
+
+    .photos img{
+        width: 100%;
+    }
+
+    .news-list dt {
+        margin-left: 0px;
+    }
+    .news-item {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        /* justify-content: center; */
+        /* height: auto; */
+        display: block;
+        text-align: left;
+    }
+
+    .contact-form label {
+        /* display: block; */
+        width: 100%;
+    }
+
+    .write, .contact-textarea {
+        /* display:; */
+        width: 100%;
+    }
+
+
+
+    .contact {
+        /* text-align: left; */
+        margin-bottom: 70px;
+    }
+
+
+}
